@@ -28,6 +28,7 @@ MongoClient.connect('mongodb://localhost:27017', {useUnifiedTopology: true}, (er
         db.collection('items').find(query).toArray((err, result) => {
             if (err) return
             res.json(result)
+            //hello it's me
         })
     })
 
