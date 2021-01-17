@@ -40,7 +40,6 @@ MongoClient.connect('mongodb://localhost:27017', {useUnifiedTopology: true}, (er
     router.delete('/delete/:name', (req, res) => {
         db.collection('items').findOneAndDelete({name: req.params.name})
         res.json('{"Success" : "ok"}')
-        //hallo
     })
 
     router.post('/edit', (req, res) =>{
